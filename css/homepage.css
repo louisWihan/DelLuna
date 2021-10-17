@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Arial';
+    background-color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.continue{
+    text-align: center;
+    padding-top: 50%;
+    color: white;
+}
+
+.price, .writter, .title{
+    text-align: center;
+    color: azure;
+}
+
+@media screen and (max-width: 599px){
+    .slider-frame{
+        height: 40vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider-id{
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider-container{
+        display: flex;
+        position: relative;
+        width: 400%;
+    }
+
+    .slider{
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slider img{
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .content{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .container{
+        width: 90%;
+        margin: auto;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;    
+    }
+
+    .content-header{
+        width: 100%;
+        height: 6vh;
+        margin-bottom: 4vh;
+    }
+
+    .content-header-title{
+        height: 0;
+        width: 40vw;
+        border-left: 0px solid transparent;
+        border-right: 12vw solid transparent;
+        border-bottom: 6vh solid blue;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .content-header-title h3{
+        margin: 0;
+        padding-top: 1vh;
+        /* padding-left: 6vw; */
+        padding-left: 4vw;
+        font-size: 3vh;
+        color: white;
+    }
+
+    .album{
+        display: flex;
+        font-size: 4vh;
+        font-weight: bold;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-top: 2vh;
+        margin-bottom: 3vh;
+    }
+
+    .album-title{
+        display: flex;
+        font-size: 2vh;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product-writter{
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        padding-top: 50%;
+    }
+
+    .product-head, .product{
+        width: 42vw;
+        height: 28vh;
+        background: linear-gradient(to right,  navy, purple);
+        background-color: whitesmoke;
+        margin-bottom: 3vh;
+    }
+
+    .img img{
+        width: 42vw;
+        height: 23vh;
+    }
+
+    .title, .writter{
+        font-size: 1.6vh;
+    }
+
+    .price{
+        font-size: 1.6vh;
+    }
+}  
+
+@media screen and (min-width: 600px){
+    .slider-frame{
+        height: 60vh;
+        width: 50vw;
+        overflow: hidden;
+    }
+
+    .slider-id{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+    }
+
+    .slider-container{
+        display: flex;
+        position: relative;
+        width: 400%;
+    }
+
+    .slider{
+        width: 100%;
+        height: 60vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slider img{
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .content{
+        width: 100%;
+        min-height: 50vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .container{
+        width: 90%;
+        margin: auto;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .content-header{
+        width: 100%;
+        height: 6vh;
+        margin-bottom: 4vh;
+    }
+
+    .content-header-style{
+        background-color: lightgray;
+        width: 90%;
+        height: 4vh;
+        margin-top: 2vh;
+        position: absolute;
+    }
+    
+    .content-header-title{
+        height: 0;
+        width: 16vw;
+        border-left: 0px solid transparent;
+        border-right: 6vh solid transparent;
+        border-bottom: 6vh solid blue;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .content-header-title h3{
+        margin: 0;
+        padding-top: 1vh;
+        /* padding-left: 6vw; */
+        padding-left: 2vw;
+        font-size: 3vh;
+        color: white;
+    }
+
+    .product{
+        display: block;
+        width: 12vw;
+        height: 32vh;
+        background: linear-gradient(to right,  navy, purple);
+        margin-bottom: 3vh;
+        cursor: pointer;
+        box-shadow: 0 0 10px lightgray;
+    }
+
+    .product:hover{
+        opacity: 0.8;
+    }
+
+    .img img{
+        width: 12vw;
+        height: 26vh; 
+    }
+
+    .title, .writter{
+        font-size: 2vh;
+    }
+
+    .continue{
+        position: relative;
+        text-align: center;
+        padding-top: 60%;
+        padding-bottom: 40%;
+        font-size: 2vh;
+        color: white;
+    }
+
+    .price{
+        font-size: 2vh;
+    }
+}

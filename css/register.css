@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Arial';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 599px) {
+    .content {
+        background-color: #faf3f3;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+        padding-top: 8vh;
+    }
+    
+    .box{
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .form-data{
+        /* display: flex;
+        flex-direction: column; */
+        text-align: left;
+        
+    }
+
+    .gender-box{
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box-form{
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        background-color: #faf3f3;
+        width: 98.9%;
+    }
+
+    textarea{
+        border-width: 2px;
+        resize: none;
+        width: 98%;
+    }
+
+    .btn{
+        justify-content: center;
+        border-radius: 1vw;
+        border-width: 0.4vw;
+        border-style: solid;
+        font-size: medium;
+        font-weight: bold;
+        border-color: rgb(160, 160, 160);
+        background-color: rgb(160, 160, 160);
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .content {
+        background-color: #faf3f3;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+        padding-top: 8vh;
+    }
+    
+    .box{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .form-data{
+        text-align: left;
+    }
+
+    .gender-box{
+        display: flex;
+    }
+
+    .box-form{
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        background-color: #faf3f3;
+        width: 99%;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    .btn{
+        justify-content: center;
+        border-radius: 1vw;
+        border-width: 0.4vw;
+        border-style: solid;
+        font-size: medium;
+        font-weight: bold;
+        border-color: rgb(160, 160, 160);
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: rgb(160, 160, 160);
+    }
+
+}
